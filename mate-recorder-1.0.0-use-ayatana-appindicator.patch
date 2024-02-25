@@ -1,0 +1,22 @@
+--- a/meson.build
++++ b/meson.build
+@@ -93,7 +93,7 @@ add_global_link_arguments(
+ # Dependencies
+ gtk_req_version = '>= 3.22.0'
+ gtk_dep = dependency('gtk+-3.0', version: gtk_req_version)
+-indicator_dep = dependency('appindicator3-0.1')
++indicator_dep = dependency('ayatana-appindicator3-0.1')
+ notify_dep = dependency('libnotify')
+ gst_dep = dependency('gstreamer-1.0')
+ math_dep = cc.find_library('m')
+--- a/src/screen-window.c
++++ b/src/screen-window.c
+@@ -17,7 +17,7 @@
+ 
+   Created Time: 2020年12月15日 星期二 11时17分28秒
+  ************************************************************************/
+-#include <libappindicator/app-indicator.h>
++#include <libayatana-appindicator/app-indicator.h>
+ #include <libnotify/notify.h>
+ 
+ #include "screen-window.h"

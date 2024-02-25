@@ -1,0 +1,10 @@
+--- a/data/meson.build
+--- b/data/meson.build
+@@ -13,7 +13,6 @@ install_data(
+ )
+ 
+ i18n.merge_file(
+-  'mate-recorder-desktop',
+   input: 'mate-recorder.desktop.in',
+   output: 'mate-recorder.desktop',
+   install: true,
